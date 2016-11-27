@@ -15,6 +15,7 @@ filetype plugin indent on
 
 " config for pluginin tagbar
 nmap <F8> :TagbarToggle<CR>
+
 " show existing tab with 4 spaces width
 set tabstop=4
 " " when indenting with '>', use 4 spaces width
@@ -35,3 +36,8 @@ let g:syntastic_check_on_wq = 0
 
 
 
+" for java autocomplete
+
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
+"nmap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+"imap <F4> <Plug>(JavaComplete-Imports-AddSmart)
